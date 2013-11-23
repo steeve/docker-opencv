@@ -15,6 +15,6 @@ run	curl 'https://raw.github.com/pypa/pip/master/contrib/get-pip.py' | python2.7
 run	pip install numpy
 run	apt-get install -y -q libavformat-dev libavcodec-dev libavfilter-dev libswscale-dev
 run	apt-get install -y -q libjpeg-dev libpng-dev libtiff-dev libjasper-dev zlib1g-dev libopenexr-dev libxine-dev libeigen3-dev libtbb-dev
-copy	build_opencv.sh	/build_opencv.sh
+add	build_opencv.sh	/build_opencv.sh
 run	/bin/sh /build_opencv.sh
 run	rm -rf /build_opencv.sh
